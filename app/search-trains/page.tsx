@@ -23,7 +23,7 @@ export default async function Page() {
 console.log(temp);
  
 return <h1>{temp.map((at:any)=>(
-<li>{at.train_name}</li>
+<li key={at.train_name}>{at.train_name}</li>
 
 ))}</h1>
 
