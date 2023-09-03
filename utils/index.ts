@@ -1,7 +1,4 @@
 'use client';
-
-
-"use client";
 export default async function ServiceCall(data :any) {
 
 const temp=data;
@@ -11,9 +8,9 @@ console.log(temp);
         try {
 
             if(data.trainbw==true){
-                url= "https://103.93.16.19:8443/api-0.0.1-SNAPSHOT/trainbw?from="+temp.from+"&to="+temp.to+"&dateOfJourney="+temp.date;
+                url= "http://103.93.16.19:33291/api-0.0.1-SNAPSHOT/trainbw?from="+temp.from+"&to="+temp.to+"&dateOfJourney="+temp.date;
             }else if(data.fromPnr==true){
-                url= "https://103.93.16.19:8443/api-0.0.1-SNAPSHOT/pnrStatus?pnr="+temp.pnrNo;
+                url= "http://103.93.16.19:33291/api-0.0.1-SNAPSHOT/pnrStatus?pnr="+temp.pnrNo;
             }
 
             const response=await fetch(url);

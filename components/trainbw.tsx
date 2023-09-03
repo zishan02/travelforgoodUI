@@ -1,9 +1,12 @@
-
 "use client";
 
-import { useRouter } from 'next/navigation';
-import React, { useState } from 'react'
 
+
+import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react'
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
 
 
 const Trainbw = () => {
@@ -11,9 +14,9 @@ const [from ,setFrom] = useState("");
     const [to ,setTo] = useState("");
     const [date ,setDate] = useState("");
     const router=useRouter();
-
+   
     const handleSubmit = async (event: any)=>{
-       
+   
          event.preventDefault();
         if(from =='' || from==null){
             alert("From cannot be Empty")
@@ -42,7 +45,7 @@ const [from ,setFrom] = useState("");
   
 
     return (
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-blue-900">
             <form >
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
 
@@ -58,8 +61,9 @@ const [from ,setFrom] = useState("");
                         <div className="sm:col-span-3">
                             <label htmlFor="train-to" className="block text-sm font-medium leading-6 text-gray-900">To</label>
                             <div className="mt-2">
-                                <input type="text" value={to} onChange={({target})=>setTo(target?.value)} name="train-to" id="train-to" autoComplete="given-1" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                            </div>
+                                <input type="text"  value={to} onChange={({target})=>setTo(target?.value)} name="train-to" id="train-to" autoComplete="abc" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+
+                </div>
                         </div>
                     </div>
                     <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
