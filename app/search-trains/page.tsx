@@ -1,6 +1,6 @@
 "use client";
 import ServiceCall from '@/utils/index';
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from '@/node_modules/next/navigation'
 
 
 export default async function Page() {

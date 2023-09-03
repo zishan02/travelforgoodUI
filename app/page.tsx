@@ -1,5 +1,4 @@
 import Trainbw from '@/components/trainbw'
-import { router } from '/next/navigation';
 
 
 
