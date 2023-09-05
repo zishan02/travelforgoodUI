@@ -2,6 +2,7 @@
 
 import { useRouter } from '@/node_modules/next/navigation';
 import React, {useState } from 'react'
+import Card from './card';
 
 
 

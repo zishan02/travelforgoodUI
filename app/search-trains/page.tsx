@@ -1,6 +1,7 @@
 "use client";
 import ServiceCall from '@/utils/index';
 import { useSearchParams } from '@/node_modules/next/navigation'
+import Card from '@/components/card';
 
 
 export default async function Page() {
@@ -22,10 +23,16 @@ export default async function Page() {
 
 console.log(temp);
  
-return <h1>{temp.map((at:any)=>(
-<li key={at.train_name}>{at.train_name}</li>
+//return <h1>{temp.map((at:any)=>(
+//<li key={at.train_name}>{at.train_name}</li>
 
-))}</h1>
+//))
+
+//}</h1>
+return (
+
+Card(temp)
+)
 
 }
 
