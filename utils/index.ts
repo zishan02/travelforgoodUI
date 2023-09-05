@@ -7,7 +7,8 @@ console.log(temp);
 
         try {
 
-            if(data.trainbw==true){
+            if(temp.trainbw==true){
+                console.log("trainbw");
                 url= "http://103.93.16.19:33291/api-0.0.1-SNAPSHOT/trainbw?from="+temp.from+"&to="+temp.to+"&dateOfJourney="+temp.date;
             }else if(data.fromPnr==true){
                 url= "http://103.93.16.19:33291/api-0.0.1-SNAPSHOT/pnrStatus?pnr="+temp.pnrNo;

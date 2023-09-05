@@ -1,19 +1,18 @@
 "use client";
 
-
-
 import { useRouter } from '@/node_modules/next/navigation';
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 
 
 
 const Trainbw = () => {
+    const router=useRouter();
 const [from ,setFrom] = useState("");
     const [to ,setTo] = useState("");
     const [date ,setDate] = useState("");
-    const router=useRouter();
+    
    
-    const handleSubmit = async (event: any)=>{
+    const handleSubmit =  (event: any)=>{
    
          event.preventDefault();
         if(from =='' || from==null){
@@ -30,8 +29,7 @@ const [from ,setFrom] = useState("");
             to,
             date
         }
-        console.log("Inside Handle Submit");
-        console.log(from);
+        console.log(data);
         router.push("/search-trains?from="+from+"&to="+to+"&date="+date);
         
         
