@@ -72,7 +72,7 @@ const [from ,setFrom] = useState("");
                     </div>   
                     <div className="col-span-full">
           <div className="mt-2 flex items-center gap-x-3">
-         <button  onClick={handleSubmit} type="button" className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Search</button>
+         <button  onClick={handleSubmit} type="button" className="hover:bg-sky-700 rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Search</button>
           </div>
         </div> 
                 </div>

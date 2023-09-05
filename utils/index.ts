@@ -1,4 +1,4 @@
-'use client';
+
 export default async function ServiceCall(data :any) {
 
 const temp=data;
