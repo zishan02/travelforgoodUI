@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation'
 import { useState } from 'react';
 
 export default  async function Page() {
-    const [isLoading, setIsLoading] = useState(false);
 
   const searchParams = useSearchParams();
   const pnr=searchParams.get('pnr');
@@ -19,7 +18,7 @@ const result=await ServiceCall(data);
 //console.log(result.trainDetails);
 
 
-return (isLoading? <Spinner /> : (
+return  (
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div className="card rounded-none bg-gray-100 p-10 m-5">
     <h3 >Status of PNR : {result.pnr}</h3>
@@ -44,7 +43,7 @@ return (isLoading? <Spinner /> : (
 </table>
 </div></div>
 )
-)
+
 
 }
 
