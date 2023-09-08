@@ -13,8 +13,10 @@ console.log(temp);
                 console.log(url);
             }else if(data.fromPnr==true){
                 url= "https://techlearnings.in/pnrStatus?pnr="+temp.pnrNo;
-            }else if(data.getTrain=true){
+            }else if(data.getTrain==true){
                 url= "https://techlearnings.in/getTrain?trainNo="+temp.trainNo;
+            }else if(temp.getRoute==true){
+                url= "https://techlearnings.in/getRoute?trainNo="+temp.trainNo;
             }
 
             const response=await fetch(url);

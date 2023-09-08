@@ -28,7 +28,7 @@ function Header() {
                   <a href="/pnr" className="hover:bg-gray-700 hover:text-white text-black rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Pnr Status</a>
                   <a href="../" className="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Train Bw Stations</a>
                   <a href="/train-details" className="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Train Details</a>
-                  <a href="train-route" className="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Route</a>
+                  <a href="/route" className="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Route</a>
                 </div>
               </div>
             </div>
