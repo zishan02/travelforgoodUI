@@ -22,7 +22,6 @@ return  (
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div className="card rounded-none bg-gray-100 p-10 m-5">
     <h3 >Status of PNR : {result.pnr}</h3>
-    <h3 >Status of PNR : {result.error}</h3>
     <table className="table-auto m-5">
         
   <thead>
